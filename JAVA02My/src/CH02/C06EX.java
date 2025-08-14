@@ -2,10 +2,10 @@ package CH02;
 
 class Profile {
 	// 속성
-	String name;
-	String addr;
-	String job;
-	String major;
+	private String name;
+	private String addr;
+	private String job;
+	private String major;
 
 	// 생성자
 	// 1)디폴트생성자 삽입
@@ -30,16 +30,23 @@ class Profile {
 		this.major = args[3];
 	}
 
-	public Profile(String all) {
-		String[] arr = all.split(",");
-		this.name = arr[0];
-		this.addr = arr[1];
-		this.job = arr[2];
-		this.major = arr[3];
-	}
+//	public Profile(String all) {
+//		String[] arr = all.split(",");
+//		this.name = arr[0];
+//		this.addr = arr[1];
+//		this.job = arr[2];
+//		this.major = arr[3];
+//	}
 //	4)"홍길동,대구,프로그래머,컴퓨터공학"을 받아 ,를 기준으로 잘라서 각 멤버에 저장
 //	이거 어케함 시발
 //	 이게 위에꺼 같은 거 아님?
+	public Profile(String arg) {
+		String params [] = arg.split(",");
+		this.name = params[0];
+		this.addr = params[1];
+		this.job = params[2];
+		this.major = params[3];
+	}
 	
 
 	// 기능
@@ -76,11 +83,13 @@ class Profile {
 		this.major = major;
 	}
 
+
 	// 2) toString 코드를 삽입
 	@Override
 	public String toString() {
 		return "Profile[name=" + name + ", addr=" + addr + ", job=" + job + ", major=" + major + "]";
 	}
+
 
 	// 3) boolean isContain(String findstr) 함수 완성하기
 	// findstr의 문자열이 각멤버인 name,addr,job,major 중 하나라도 포함되어 있으면 true 리턴
@@ -129,3 +138,25 @@ public class C06EX {
 	}
 
 }
+
+//오늘 수업
+// 클래스 문서화 -> 객체 생성
+//	속성
+//	기능(일반메서드,생성자)
+//	오버로딩(이름동일,파라미터 다양)
+
+// this예약어 (생성된 객체의 위치값)
+
+// String API(내부기능 확인)
+// equals , contain , charAt , substring .. . . 
+
+
+
+
+
+
+
+
+
+
+
