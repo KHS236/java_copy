@@ -43,13 +43,13 @@ public class C06EX {
 			
 //			Insert 코드=============================================================================
 //			sql코드 객체 생성
-//			pstmt = conn.prepareStatement("insert into charge_station values(?,?,?,?,?,?)"); //행에 컬럼이 6개니까 ?도 6개
-//			pstmt.setInt(1,Integer.parseInt(args[0])); //첫뻔제 칼럼은 순번 숫자니까 args의 인덱스0을 인티저로 변환해서 대입
-//			pstmt.setString(2, args[1]); //나머지 말그대로 args인덱스 순서대로 넣어주면 됨
-//			pstmt.setString(3, args[2]);
-//			pstmt.setString(4, args[3]);
-//			pstmt.setString(5, args[4]);
-//			pstmt.setString(6, args[5]);
+			pstmt = conn.prepareStatement("insert into charge_station values(?,?,?,?,?,?)"); //행에 컬럼이 6개니까 ?도 6개
+			pstmt.setInt(1,Integer.parseInt(args[0])); //첫뻔제 칼럼은 순번 숫자니까 args의 인덱스0을 인티저로 변환해서 대입
+			pstmt.setString(2, args[1]); //나머지 말그대로 args인덱스 순서대로 넣어주면 됨
+			pstmt.setString(3, args[2]);
+			pstmt.setString(4, args[3]);
+			pstmt.setString(5, args[4]);
+			pstmt.setString(6, args[5]);
 			
 //			입력
 //			205 "서울어쩌구" "무슨지사" "코리아IT" "11111" "무슨중앙대로어쩌구"
@@ -70,7 +70,7 @@ public class C06EX {
 			
 			
 //			Delete코드
-			pstmt = conn.prepareStatement("DELETE FROM `opendatadb`.`charge_station` WHERE (`순번` = '205');");
+//			pstmt = conn.prepareStatement("DELETE FROM `opendatadb`.`charge_station` WHERE (`순번` = '205');");
 			
 //			pstmt.setInt(1,Integer.parseInt(args[0])); //순번만 있으면 되니까 하나만 쓰면 댐
 //			입력

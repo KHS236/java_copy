@@ -47,3 +47,17 @@ public class C01DBconn {
 	}
 
 }
+
+
+
+// DB연결 정리
+//	1 DBMS Driver 메모리 적재
+//	2. Connection 객체 생성
+//	3. PreparedStatement 객체 내 SQL 보관
+//	4. .executeQuery() - Select / .executeUpdate() - Insert / Update / Delete
+//	5. 자원관리
+
+//	Mysql 아카이브 다운받아서 eclipse에 넣고 자바프로젝트 우클릭 > 프로퍼티
+//	> 라이브러리 > Add JARs... > mysql 자바 아카이브 등록 Apply
+
+
