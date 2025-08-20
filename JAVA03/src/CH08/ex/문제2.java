@@ -312,8 +312,8 @@ public class 문제2 {
 			try{conn.rollback();}catch(Exception e2) {}
 		} finally {
 			//자원제거
-			/*- JDBC API를 통해 사용된 객체들은 생성된 객체들을 사용한 순서의
-			   역순(resultset > statement > connection 객체 순)으로 Close*/
+			/*- JDBC API를 통해 사용된 객체들은 사용한 순서의 역순
+			   (resultset > statement > connection 객체 순)으로 Close*/
 			try{rs.close();}catch(Exception e3) {}
 			try{pstmt.close();}catch(Exception e3) {}
 			try{conn.close();}catch(Exception e3) {}
