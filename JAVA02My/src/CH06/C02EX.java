@@ -49,29 +49,29 @@ class Won2Dollar extends Converter {
 }
 
 //섭씨 -> 화씨  ( 화씨 = (섭씨 * 9/5)+32 )
-class 섭씨to화씨 extends Converter {
-	private double ratio2;
-	
-	public 섭씨to화씨(double ratio2) {
-		this.ratio2 = ratio2;
-	}
-
-	@Override
-	protected double convert(double src) {
-		return ;
-	}
-
-	@Override
-	protected String getSrcString() {
-		return null;
-	}
-
-	@Override
-	protected String getDestString() {
-		return null;
-	}
-
-}
+//class 섭씨to화씨 extends Converter {
+//	private double ratio2;
+//	
+//	public 섭씨to화씨(double ratio2) {
+//		this.ratio2 = ratio2;
+//	}
+//
+//	@Override
+//	protected double convert(double src) {
+//		return ;
+//	}
+//
+//	@Override
+//	protected String getSrcString() {
+//		return null;
+//	}
+//
+//	@Override
+//	protected String getDestString() {
+//		return null;
+//	}
+//
+//}
 
 public class C02EX {
 
