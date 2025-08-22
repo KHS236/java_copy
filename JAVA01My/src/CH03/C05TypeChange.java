@@ -11,7 +11,7 @@ public class C05TypeChange {
 		double dnum2 = num1 / num2;
 		double dnum3 = num1 / num2;
 //		10 / 4 일 때 나눠지는 수가 int형이면 나눠지는 값이 int형으로 반환
-//		나머지 연산자 몫 연산자 따로 있던거 기억 하재 ?
+//		나머지 연산자 몫 연산자 따로 있던거 기억
 
 //		해결방법
 //		더블로 형변환 해서 나누기
@@ -20,9 +20,6 @@ public class C05TypeChange {
 //		num1에 곱셈 연산자 사용하기 <- 연산자를 2번 쓰는 거라 뭐 딱히 좋을 건 없음
 //		double dnum4 = (num1*1.0) / num2;
 		
-		
-		
-
 		System.out.println("dnum1 : " + dnum1);
 		System.out.println("dnum2 : " + dnum3);
 		System.out.println("dnum3 : " + dnum2);
