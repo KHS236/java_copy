@@ -1,15 +1,17 @@
 package CH04;
 
-//		자바 util.list 임폴트
-import java.util.ArrayList;
 import java.util.List;
+import java.util.Vector;
 
-public class C01ListMain {
+public class C02ListMain {
 
 	public static void main(String[] args) {
 //			<>제너릭 (다이아몬드 연산자) 리스트를 어떤 자료형으로 받을지 / 다른 것도 이쑴
-		List<String> list = new ArrayList();
-//		추가
+//		List<String> list = new ArrayList();
+//		List<String> list = new LinkedList();
+		List<String> list = new Vector();
+		
+		//		추가
 		list.add("HTML/CSS/JS");
 		list.add("NODEJS");
 		list.add("SCSS");
