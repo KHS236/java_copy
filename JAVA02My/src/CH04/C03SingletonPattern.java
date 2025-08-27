@@ -13,10 +13,7 @@ class Company{
 		}
 		return instance;
 	}
-	
-	
-	
-	
+
 //	toString 재정의
 	@Override
 	public String toString() {
