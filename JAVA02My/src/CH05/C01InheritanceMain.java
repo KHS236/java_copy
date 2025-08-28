@@ -1,4 +1,4 @@
-//package CH05;
+package CH05;
 //
 //class Point2D {
 //	int x;
@@ -58,6 +58,5 @@
 //	}
 //
 //}
-package CH05;
 
 
