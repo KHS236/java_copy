@@ -12,7 +12,7 @@ public class C01Client {
 		
 		//서버 연결 요청 (소켓 생성)
 //		Socket client = new Socket("SERVERIP",PORT);
-		Socket client = new Socket("192.168.5.17",7000);
+		Socket client = new Socket("192.168.5.50",7000);
 		
 		//클라이언트 위치에서 내용 수신
 		InputStream in = client.getInputStream();

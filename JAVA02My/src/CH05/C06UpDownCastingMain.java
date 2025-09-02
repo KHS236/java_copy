@@ -1,23 +1,14 @@
 package CH05;
-
 //	부모
 class Super{
 	int n1;
 }
-
-
 //	자식
 class Sub extends Super{
 	int n2;
 }
-
-
-
-
 public class C06UpDownCastingMain {
-
 	public static void main(String[] args) {
-
 		// 캐스팅 == 형변환
 		//Nocasting(형변환 없음 / 자료형 일치)
 		Super ob1 = new Super();
@@ -46,8 +37,6 @@ public class C06UpDownCastingMain {
 //		Upcasting을 사용하는 이유
 //		1) 상속관계에 있는 모든 하위클래스로 객체가 만들어졌을 때 그 객체들 모두 일단 연결할 수 있다
 //		2) Upcasting된 상태에서는 재정의된 함수에 접근이 가능하다.
-		
-		
 		
 		//===========================================================================
 		// DownCasting(하위클래스 참조변수 = 상위클래스형 객체) (강제형변환)
