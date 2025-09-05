@@ -37,7 +37,7 @@ public class ClientMain {
 		//실행
 		th1.start();
 		th2.start();
-		//??
+		//다른 스레드가 끝날 때까지 기다림
 		th1.join();
 		th2.join();
 		//자원관리
